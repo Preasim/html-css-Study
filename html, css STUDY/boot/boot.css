@@ -1,0 +1,19 @@
+
+.pricing img{
+    width: 80px;
+}
+
+.pricing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bar-1 {
+    width: 50px;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}

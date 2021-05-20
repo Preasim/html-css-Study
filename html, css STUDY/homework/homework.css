@@ -1,0 +1,437 @@
+
+.sample-input {
+    padding: 20px;
+    font-size: 20px;
+    border-right: 5px;
+    border: 1px solid #eee;
+}
+/* ----------------------------------- 1------------------------------------------- */
+
+.container {
+    margin: 0 150px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+h1 {
+    margin: 40px 0;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+span {
+    display: block;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.a1 input {
+    width: 100%;
+    height: 5%;
+}
+
+.a2 {width: 100%; height: 190px; margin-top: 40px;}
+.a2 .left {float: left;}
+
+.a2 .right {float: right;}
+
+.a2 input {
+    width: 440px;
+    height: 80px;
+}
+
+.a3 input {
+    width: 100%;
+    height: 20%;
+}
+
+.a4 {display: inline;}
+
+.button1 {
+    margin-top: 50px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 5px;
+    background: #9e9e9e;
+}
+
+.button_text {display: inline; font-size: 25px; padding-left: 10px}
+
+.button2 {
+    margin-top: 30px;
+    border: 0;
+    background: #ffc400;
+    float: right;
+    width: 230px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #fff;
+}
+
+/* ----------------------------------- 2------------------------------------------- */
+
+.cart-background {
+    padding: 20px;
+    background-color: #c2d3de;
+}
+
+.cart-form-container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.cart-table {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #fff;
+    
+}
+
+/* 
+border-collapse : collapse; 와 
+border-radius: 5px; 가 충돌해서 
+border-radius: 5px; 가 작동되지 않을 때 =
+
+1.
+ table {
+  border-collapse : collapse;
+  border-spacing : 0;
+}
+
+(왼쪽위에있는 td) {
+  border-top-left-radius : 5px;
+}
+
+2.
+ table {
+  border-collapse : collapse;
+  border-radius : 7px;
+  border-style : hidden;
+  box-shadow : 0 0 0 1px #666;
+}
+*/
+.cart-table td, .cart-table th {
+    border-bottom: 1px solid #c2d3de;
+}
+
+td, th {
+    padding: 15px;
+}
+
+.cart-item {
+    width: 50%;
+    text-align: left;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-brown {
+    background-color: coral;
+    color: #fff;
+}
+
+.btn-brown:hover {
+    background-color: chocolate;
+}
+/*
+.btn:focus { focus = 클릭 후 커서가 찍혀있는 상태 
+    background-color: red;
+}
+*/
+.btn-brown:active {
+    background-color: brown;
+}
+
+/*1. hover 2. focus 3. active 이 순서로 써야 에러없이 작동됨*/
+
+.custom-link {
+    text-decoration: none;
+}
+
+.custom-link:link {
+    color: black;
+}
+
+.custom-link:visited {
+    color: red;
+}
+/*
+:link = 방문 전 링크
+:visited = 방문 후 링크
+*/
+
+/* ----------------------------------- 3 ------------------------------------------- */
+
+/*
+@font-face {
+    font-family : '앙 기모띠'; = 밑에서 사용할 폰트 명
+    src : url(../font/NanumSquareR.ttf) [ttf 파일은 용량이 거대하다]
+}
+@font-face로 커스텀 폰트 첨부하기 
+*/
+
+/*
+p {
+    transform: rotate(0.03deg) = 각도 조절 (폰트가 깨져보일때 0.03만큼 적용하면 부드러워 보인다)
+}
+*/
+/* ----------------------------------- 4 ------------------------------------------- */
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo {
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.menu-item {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* ----------------------------------- 5 ------------------------------------------- */
+
+.explain-container {
+    text-align: center;
+    min-width: 1200px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.explain-container div {
+    margin-top: 50px;
+    float: left;
+    width: 25%;
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .explain-container {
+        float: none;
+        width: 100%;
+    }
+}
+/* ----------------------------------- 6 ------------------------------------------- */
+.custom {
+    color: #fff;
+    font-size: 16px;
+}
+
+.test::placeholder {
+    color: red;
+}
+
+.test2::-webkit-progress-value {
+    background: skyblue;    
+}
+
+.test2::-webkit-progress-bar {
+    background: #eee;    
+}
+/* ----------------------------------- 7 ------------------------------------------- */
+.ani-button {
+    padding: 20px;
+    font-size: 22px;
+    background: skyblue;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'nanumsquare';
+    margin: auto;
+    display: block;
+    margin-top: 150px;
+}
+
+.ani-button:hover {
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(-8deg)
+    }
+    50% {
+        transform: rotate(8deg)
+    }
+    75% {
+        transform: rotate(-8deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.ani-x {
+    margin: 150px auto;
+    text-align: center;
+    font-size: 70px;
+    width: 84px;
+    cursor: pointer;
+}
+
+.ani-x:hover {
+    animation-name: tox;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tox {
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(-15deg)}
+    100% {transform: rotate(45deg) scale(2)}
+}
+
+/*
+.navbar1 {
+    position: fixed;
+    width: 300px;
+    background: #000;
+    color: white;
+    height: 100%;
+    padding: 25px;
+    text-align: right;
+    z-index: 5;
+    transition: all 1s;
+    transform: translateX(-250px);
+    top: 0;
+    left: 0;
+}
+
+.navbar1:hover {
+    text-align: center;
+    transform: translateX(0px);
+}
+
+.navbar-item {
+    transition: all 1s;
+    transform: translateX(-400px);
+}
+
+.navbar1:hover .navbar-item {
+    transform: translateX(0px);
+}
+*/
+/* ----------------------------------- 8 ------------------------------------------- */
+/*
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container div {
+    border: 1px solid #000;
+}
+
+.grid-nav {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.grid-sidebar {
+    grid-row: 2 / 4;
+}
+*/
+
+.grid-container-hw {
+    display: grid;
+/*    grid-template-columns: 100px 100px 100px;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+        "헤더 헤더 헤더 헤더"
+        "사이드바 내용 내용 내용"
+        "사이드바 내용 내용 내용";
+}
+
+.grid-container-hw div {
+    border: 1px solid #000;
+}
+
+
+.grid-nav { 
+    grid-area: 헤더;
+    
+}
+
+.grid-sidebar {
+    grid-area: 사이드바;
+}
+
+.grid-content {
+    grid-area: 내용;
+}
+
+@media screen and (max-width : 768px){
+    .grid-container-hw {
+        grid-template-areas: 
+            "헤더 헤더 헤더 헤더"
+            "사이드바 사이드바 사이드바 사이드바"
+            "내용 내용 내용 내용";
+        grid-template-rows: 100px 100px 500px;
+    }
+}
+/* ----------------------------------- 9 ------------------------------------------- */
+.grid-container2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container2 {
+    display: grid;
+    max-width: 600px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    padding: 10px;
+}
+
+.grid-first-img {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+@media screen and (max-width : 768px) {
+    .grid-container2 {
+        grid-template-columns: 1fr;
+    }
+    .grid-first-img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}

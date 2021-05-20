@@ -1,0 +1,251 @@
+button {margin: 0; padding: 0; border: 0;}
+
+
+#nav {
+    position: fixed;
+    width: 300px;
+    background: #283593;
+    color: #fff;
+    height: 100%;
+    padding: 10px;
+    text-align: right;
+    z-index: 5;
+    transition: all 1s;
+    transform: translateX(-250px);
+    top: 0;
+    left: 0;
+}
+
+#nav:hover {
+    text-align: center;
+    transform: translateX(-120px);
+}
+
+.nav-section {
+    margin: 30px 0 0 50px;
+}
+
+.menu-txt {
+    transition: all 1s;
+    transform: translateX(-500px);
+}
+
+#nav:hover .menu-txt {
+    transform: translateX(100px);
+    display: inline;
+    padding-left: 20px;
+}
+
+/* ------------------------------------------------------------nav */
+
+#header {
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 #bdbdbd;
+}
+
+.nav-bar {
+    position: relative;
+}
+
+.nav-search {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px 0 0 5px;
+    padding-left: 10px;
+}
+
+.nav-btn {
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    color: #fff;
+    background: #424242;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-btn:hover {
+   
+    
+}
+
+.nav-search:hover {
+    transition: all 1s;
+    width: 400px;
+}
+
+.nav-alarm {
+    position: absolute;
+    right: 220px;
+    top: 10px;
+    font-size: 20px;
+    color: #757575;
+}
+
+.nav-mail {
+    position: absolute;
+    right: 150px;
+    top: 10px;
+    font-size: 20px;
+    color: #757575 ;
+}
+
+.nav-txt {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+    color: #757575 ;
+}
+
+.nav-5 {
+    position: absolute;
+    right: 207px;
+    top: -6px;
+    background: #d50000;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-9 {
+    position: absolute;
+    right: 135px;
+    top: -6px;
+    background: #d50000;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* nav-bar */
+
+#section-1 h2 {
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.st {
+    position: relative;
+    height: 130px;
+    background: #fff;
+    box-shadow: 2px 2px 5px #bdbdbd;
+    border-radius: 8px;
+    padding: 30px 0 0 20px;
+}
+
+.st1 {
+    border-radius: 10px;
+    border-left: 5px solid #81d4fa;
+}
+
+.st2 {
+    border-radius: 10px;
+    border-left: 5px solid #00c853;
+}
+
+.st3 {
+    border-radius: 10px;
+    border-left: 5px solid #0277bd ;
+}
+
+.st4 {
+    border-radius: 10px;
+    border-left: 5px solid #ffc107;
+}
+
+.st p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.st i {
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    font-size: 40px;
+    color: #757575;
+}
+/* section-1 */
+
+.chart {
+    background: #fff;
+    height: 500px;
+    width: 65%;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 5px 3px 5px #bdbdbd;
+    display: inline-block;
+}
+
+.chart-txt {
+    margin-top: 30px;
+    background: #f5f5f5;
+    width: 65%;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 5px -1px 6px #bdbdbd;
+    font-size: 20px;
+    padding: 8px 0 0 20px;
+    display: inline-block;
+}
+
+#myChart {
+    margin: 25px 0;
+    padding: 0 25px;
+}
+
+.tasks {
+    display: inline-block;
+    float: right;
+}
+
+.tasks-top {
+    background: #f5f5f5;
+    box-shadow: 5px -1px 6px #bdbdbd;
+    width: 400px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px 10px 0 0;
+    padding: 13px;
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+
+.tasks-bottom {
+    background: #fff;
+    box-shadow: 5px 3px 5px #bdbdbd;
+    width: 400px;
+    height: 190px;
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.tasks-bottom p {
+    padding: 6px 0;
+}
+/* chart */
+
+@media screen and (max-width : 768px) {
+    .nav-bar {
+        display: none;
+    }
+    #banner {
+        display: none;
+    }
+    
+    .st {
+        padding: 0;
+        
+    }
+}

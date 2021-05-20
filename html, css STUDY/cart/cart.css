@@ -1,0 +1,11 @@
+
+td, th {
+    border: 1px solid grey;
+    padding: 10px;
+    /* vertical-align: bottom; */
+}
+
+table {
+    /* table 태그 필수 (border-collapse: collapse = 보더끼리 겹치는 속성) */
+    border-collapse: collapse;
+}

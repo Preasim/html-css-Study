@@ -1,0 +1,11 @@
+.header {
+    background: rgba(0,0,0,0.5);
+    
+}
+
+.white-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0.5ps 0.5px 2px 1px #eee;
+}

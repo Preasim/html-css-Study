@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="homework.css">
+    
+    
+
+   
+    <div>
+        <form>  <!-- <form action="전송할 경로"> -->
+            <input type="text" value="hello">
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <input type="text" placeholder="hello">
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <input type="text" name="firstname"> <!-- name = "인풋의 이름 (기능개발용)" -->
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <input type="text">
+            <select>
+                <option>aaa</option>
+                <option>bbb</option>
+                <option>ccc</option>
+            </select>
+            <textarea rows="10"></textarea>
+            <input type="submit" value="보내기">
+            <button type="submit">보내기</button>
+            <button></button>
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <input type="text" class="sample-input">
+        </form>
+    </div>
+    
+    
+  <!-- ----------------------------------- 1-------------------------------------------- -->
+    
+    
+    <h1><div class="container">contact us</div></h1>
+
+    <div class="a1">
+        <div class="container">
+           <span>Your Email</span>
+            <form>
+                <input type="text" placeholder="email@example.com">
+            </form>
+        </div>
+    </div>
+
+    <div class="a2">
+        <div class="container">
+          <div class="left">
+               <span>First name</span>
+                <form>
+                    <input type="text">
+                </form>
+            </div>
+            <div class="right">
+                <span>Last name</span>
+                <form>
+                    <input type="text">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="a3">
+        <div class="container">
+           <span>Message</span>
+            <form>
+                <input type="text">
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="button1"></button>
+        <span class="button_text">Subscribe</span>
+        <button class="button2">SEND</button>
+    </div>
+    <!-- ----------------------------------- 2-------------------------------------------- -->
+    <div class="cart-background">
+        <h3>Your shopping cart</h3>
+        <div class="cart-form-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th class="cart-img"></th>
+                        <th class="cart-item">ITEM</th>
+                        <th class="cart-amount">AMOUNT</th>
+                        <th>PRICE</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="" style="width:100ph"></td>
+                        <td><p>SONY</p></td>
+                        <td>1</td>
+                        <td>70000won</td>
+                        <td>70000won</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="text-align: right">70000won</td>
+                        <!-- colspan 은 콜롬을 몇개 차지할것인가를 지정 -->
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+            <button class="btn btn-brown">Purchase</button>
+<!--            <a role="button" class="btn">Purchase</a>-->
+           <button class="btn btn-red">빨간버튼</button>
+            <a class="custom-link" href="http://naver.com">링크</a>
+            
+            
+        </div>
+    </div>
+    <!-- ----------------------------------- 3 -------------------------------------------- -->
+    <!-- ----------------------------------- 4 -------------------------------------------- -->       
+    <div class="flex-container">
+       <p class="menu-logo">shooshoes</p>
+       <span style="flex-grow: 10"></span>
+       <span class="menu-item">Products</span>
+       <span class="menu-item">Services</span>
+       <span class="menu-item">Sog In</span>
+    </div>
+    <!-- ----------------------------------- 5 -------------------------------------------- --> 
+    
+    <div class="explain-container">
+        <div class="foop">
+            <h2>Fast Shipping</h2>
+            <p>We ship 90% faster than any other services</p>
+        </div>
+        <div class="foop">
+            <h2>Global</h2>
+            <p>We serve global customers, anywhere</p>
+        </div>
+        <div class="foop">
+            <h2>Good Quality</h2>
+            <p>Superior quality is not an option.</p>
+        </div>
+        <div class="foop">
+            <h2>Excellent Service</h2>
+            <p>Customer calls and service</p>
+        </div>
+        <div style="float: none; clear: both;"></div>
+    </div>
+    
+ <!-- ----------------------------------- 6 -------------------------------------------- --> 
+    
+    <p class="custom">안녕하세요</p>
+
+   
+<!--   Shadow DOM 개발자 편하라고 몰래 숨겨놓은 HTML-->
+    <input type="text" value="hello">
+<!--    value = 이미 채워진 값-->
+    <input class="test" type="text" placeholder="hello">
+<!--    뒷 배경 글씨-->
+    <progress value="20" max="100" class="test2"></progress>
+    <!-- ----------------------------------- 7 -------------------------------------------- --> 
+    
+    <button class="ani-button">흔들버튼</button>
+    
+    <div class="ani-x">+</div>
+    
+    <nav class="navbar1">
+        <h4>Menu</h4>
+        <p class="navbar-item">menu-item</p>
+    </nav>
+    <!-- ----------------------------------- 8 -------------------------------------------- --> 
+    
+    <div class="grid-container-hw">
+        <div class="grid-nav">헤더</div>
+        <div class="grid-sidebar">사이드바</div>
+        <div class="grid-content">내용</div>
+    </div>
+     <!-- ----------------------------------- 9 -------------------------------------------- --> 
+    <div class="grid-container2">
+        <div class="grid-first-img"><img src="https://placeimg.com/500/500/any"></div>
+        <div><img src="https://placeimg.com/500/500/arch"></div>
+        <div><img src="https://placeimg.com/500/500/nature"></div>
+        <div><img src="https://placeimg.com/500/500/people"></div>
+        <div><img src="https://placeimg.com/500/500/tech"></div>
+        <div><img src="https://placeimg.com/600/600/people"></div>
+    </div>
+     
+    
+</body>
+</html>

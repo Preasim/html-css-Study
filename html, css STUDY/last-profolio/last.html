@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Last-profolio</title>
+</head>
+<body style="background: #f5f5f5;">
+    <link rel="stylesheet" href="last.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.js">
+    <link rel="stylesheet" href="jquery-3.6.0.min.js">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    
+    <nav id="nav">
+        <div class="container">
+           <div class="nav-section">
+                <i class="fas fa-home"></i>
+                <p class="menu-txt">Home</p>
+            </div>
+            <div class="nav-section">
+                <i class="fas fa-headphones"></i>
+                <p class="menu-txt">Services</p>
+            </div>
+            <div class="nav-section">
+                <i class="fas fa-flag"></i>
+                <p class="menu-txt">Alerts</p>
+            </div>
+            <div class="nav-section">
+                <i class="fas fa-chart-pie"></i>
+                <p class="menu-txt">Stats</p>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <header id="header">
+       <div class="container" style="padding-top: 20px;">
+            <div class="nav-bar">
+                <form class="search-btn" style="display: inline-block;">
+                    <input class="nav-search" type="text" placeholder="Search">
+                    <button class="nav-btn"><i class="fas fa-search"></i></button>
+                </form>
+                <i class="fas fa-bell nav-alarm"></i>
+                <span class="nav-5">5</span>
+                <i class="fas fa-envelope nav-mail"></i>
+                <span class="nav-9">9</span>
+                <span class="nav-txt">Minny Park</span>
+            </div>
+        </div>
+    </header>
+    
+    <section id="section-1">
+        <div class="container">
+         <h2>Dashboard</h2>
+          <div class="row">
+            <div class="col-lg-3">
+                <div class="st1">
+                    <div class="st">
+                        <h5>Earnings (Monthly)</h5>
+                        <p>$400,000</p>
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="st2">
+                    <div class="st">
+                        <h5>Earnings (Annual)</h5>
+                        <p>$800,000</p>
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="st3">
+                    <div class="st">
+                        <h5>Tasks</h5>
+                        <p>13</p>
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="st4">
+                    <div class="st">
+                        <h5>Requests</h5>
+                        <p>26</p>
+                        <i class="fas fa-comments"></i>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section id="banner">
+        <div class="container">
+           <div class="chart-txt"><p>Earnings Overview</p></div>
+           <div class="tasks">
+                <div class="tasks-top">Tasks</div>
+                <div class="tasks-bottom">
+                    <p>Borrowed Items</p>
+                    <p>Trello requests</p>
+                    <p>Marked Comments</p>
+                </div>
+            </div>
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div> 
+            
+        </div>
+    </section>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            //차트타입
+            type: 'line',
+
+            //데이터
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Monthly',
+                    backgroundColor: 'rgb(000, 000, 153)',
+                    borderColor: 'rgb(000, 000, 204)',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+            options: {}
+        });
+    </script>
+</body>

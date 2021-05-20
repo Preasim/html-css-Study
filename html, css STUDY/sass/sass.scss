@@ -1,0 +1,17 @@
+/*
+sass : 괄호, 세미콜론 X
+scss : 괄호, 세미콜론 O */
+
+//SCSS
+
+$메인색상 : #ebb774;
+$blue : #111111;
+
+.text {
+    color: $메인색상;
+}
+
+.text {
+    color: $blue;
+}
+   
